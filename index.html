@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Number Guessing Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="game-box">
+    <h1>🎯 Guess The Number!</h1>
+    <p class="subtitle">Guess a number between <strong>1 and 100</strong></p>
+
+    <input type="number" id="guessInput" placeholder="Enter your guess" min="1" max="100" />
+    
+    <div class="guess-display" id="guessDisplay">--</div>
+
+    <button onclick="checkGuess()">Submit</button>
+
+    <p id="message" class="message"></p>
+    <p id="attempts" class="attempts"></p>
+
+    <button onclick="restartGame()" class="restart-btn">🔁 Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+
+  <footer>
+    <p>Made with ❤️ by <strong>Shubham Verma</strong></p>
+    <p>&copy; 2025 Shubham Verma. All rights reserved.</p>
+    <div>
+      <a href="https://github.com/itissv/guessing-game" target="_blank">🔗 GitHub</a>
+      <a href="https://www.linkedin.com/in/itisshubham/" target="_blank">💼 LinkedIn</a>
+    </div>
+  </footer>
+</body>
+</html>
